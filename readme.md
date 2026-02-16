@@ -278,4 +278,3 @@ swiggy-delivery-prediction/
   <b>Built with method chaining, type safety, and MLOps best practices.</b><br>
   <i>⭐ Star if you find the pipeline architecture useful!</i>
 </p>
-```
