@@ -210,34 +210,6 @@ mlflow ui --port 5000
 # Run pipeline
 python src/train.py --model random_forest --track-experiments
 ```
-
----
-
-## 📁 Project Structure
-
-```
-swiggy-delivery-prediction/
-├── 📂 data/
-│   ├── raw/swiggy.csv                    # Original 45K records
-│   └── processed/swiggy_cleaned.csv      # Post-method-chain
-├── 📂 src/
-│   ├── data_clean_utils.py               # 🔧 Method chaining core
-│   ├── features.py                       # Haversine + time features
-│   ├── pipeline.py                       # sklearn Pipeline definitions
-│   └── train.py                          # Entry point with MLflow
-├── 📂 notebooks/
-│   ├── 01_data_cleaning.ipynb            # EDA + anomaly detection
-│   ├── 02_feature_engineering.ipynb      # Method chaining demo
-│   └── 03_model_training.ipynb           # Pipeline + tuning
-├── 📂 assets/
-│   ├── mlflow_comparison_2runs.png       # Experiment tracking viz
-│   └── mlflow_comparison_3runs.png       # 3-strategy comparison
-├── 📂 tests/
-│   └── test_pipelines.py                 # Unit tests for pure functions
-├── README.md
-└── requirements.txt
-```
-
 ---
 
 ## 🎓 Key Learnings
